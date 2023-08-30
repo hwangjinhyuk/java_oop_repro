@@ -1,0 +1,32 @@
+package GUI;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Messagebox {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	/*	Scanner sc = new Scanner (System.in);
+		System.out.print("Enter Username: ");
+		String username=sc.nextLine();
+		System.out.print("Enter Password: ");
+		String pw = sc.next();*/
+		
+		String username="Admin";
+		String pw="123!@#";
+		if (username.equals("Admin") && pw.equals("123!@#"))
+			JOptionPane.showMessageDialog(null, "Login Sucessfully");
+		
+		else 
+			JOptionPane.showMessageDialog(null, "Invaild login", "login error", JOptionPane.ERROR_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Invaild login", "login error", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Invaild login", "login error", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Invaild login", "login error", JOptionPane.QUESTION_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Invaild login");
+		
+
+	}
+
+}
